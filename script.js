@@ -117,3 +117,23 @@ console.log(getComputedStyle(message).height);
 console.log(getComputedStyle(message).color);
 
 message.style.height=Number.parseFloat(getComputedStyle(message).height,10)+80+'px'
+
+
+//COLOR ARE VARIABLES
+//CHANGE COLOR
+//setProperty()
+document.documentElement.style.setProperty('--color-primary','orangered');
+
+
+//ATTRIBUTES
+const logo=document.querySelector('.nav__logo');
+console.log(logo);
+console.log(logo.alt);
+//IF WE ADD PROPERTIES MANULAY IT WILL NOT BE APPEAR IN LOGO
+console.log(logo.src);
+console.log(logo.className);
+
+console.log(logo.getAttribute('designer'));
+
+
+logo.setAttribute('company','banllist');
